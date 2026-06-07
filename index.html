@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Contacto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form onsubmit="enviarFormulario(event)">
+  <label>Nombre</label>
+  <input type="text" placeholder="Ingresá tu nombre" required>
+
+  <label>Email</label>
+  <input type="email" placeholder="Ingresá tu email" required>
+
+  <label>Mensaje</label>
+  <textarea placeholder="Escribí tu mensaje" required></textarea>
+
+  <button type="submit">Enviar</button>
+</form>
+<script>
+  function enviarFormulario(event) {
+    event.preventDefault(); // evita que recargue la página
+    alert("Formulario enviado correctamente");
+  }
+</script>
+</body>
+</html>
